@@ -1,0 +1,26 @@
+---
+title: "Random Variable and Probability Distribution"
+author: "CLH"
+date: "2024-02-19"
+output: html_document
+---
+
+# Sample
+```{r}
+sample(1:6, size=1)
+```
+
+# Visualization of Probability
+```{r}
+probability <- rep(1/6, 6)
+variable <- c('Point 1', 'Point 2', 'Point 3', 'Point 4', 'Point 5', 'Point 6')
+# plot the probabilities
+barplot(probability,
+        names.arg = variable,
+     xlab = "Outcomes",
+     ylab = "Probability",
+     main = "Probability Distribution",
+     col = "#009393")
+
+```
+
